@@ -1,7 +1,18 @@
+# https://guides.emberjs.com/v3.9.0/tutorial/routes-and-templates/
+
 # events-app
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
+
+## task^
+
+* List available events.
+* Link to information about the company.
+* Link to contact information.
+* Filter the list of events by city.
+
+
 
 ## Prerequisites
 

@@ -1,0 +1,28 @@
+<div class="">
+    <h2>Weclome!</h2>
+    <p>Find the event you need or create your own.</p>  
+</div>
+<div class="row">
+    <ListFilter
+        @filter={{action "filterByCity"}}
+        as |filteredResults|
+    >
+        <div class="results col-md-12 col-xs-12 col-sm-8 col-lg-11">
+            {{#each filteredResults as |eventUnit|}}
+                <div class="city">
+                    <EventListing @event={{eventUnit}} />
+                </div>
+            {{/each}}    
+        </div>
+    </ListFilter>
+</div>
+{{outlet}}
+
+{{!-- <div class="row">
+    <div class="results col-md-12 col-xs-12 col-sm-8 col-lg-11">
+        {{#each this.model as  |eventUnit|}}
+            <EventListing @event={{eventUnit}} class="this"/>
+        {{/each}}
+     </div>
+    <div> Hello</div>
+</div> --}}

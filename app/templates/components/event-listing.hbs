@@ -1,0 +1,17 @@
+<article class="listing container">
+    <div class="listing-img">
+        <a class="image {{if this.isWide "wide"}}"
+            role="button">
+            <img src="{{this.event.image}}" alt="" style="border-radius: 10px;"><br/>
+            {{!-- <small>View Larger</small> --}}
+        </a>
+    </div>
+    <div class="listing-details container">
+        <h3>{{this.event.title}}</h3>
+        {{!-- <span class="owner">Owner:</span> {{this.event.owner}}<br/> --}}
+        <span><strong>Type:</strong></span> {{event-property-type this.event.owner}} - {{this.event.category}}<br/>
+        <span><strong>City:</strong></span> {{this.event.city}}<br/>
+        <button class="listint-button">viev details</button>
+    </div>
+        
+</article>
